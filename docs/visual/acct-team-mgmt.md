@@ -1,12 +1,19 @@
 ---
 id: acct-team-mgmt
-title: Visual Testing Account and Team Management
+title: Screener Account and Team Management
 sidebar_label: Account and Team Management
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+:::warning Screener End-of-life
+
+The Screener visual testing solution is going to be discontinued on May 31st, 2024. You can migrate to the new Sauce Labs Visual Testing solution by following the [integration steps](/visual-testing/).
+
+If you have any questions, please reach out to your Customer Success Manager or Sauce Labs Support.
+:::
 
 Teams Management allows you to create Teams for your Account, add users to your Teams, specify user roles, and specify which projects users have access to. In addition, you can assign a user to be an administrator for your Screener Account.
 
@@ -21,99 +28,61 @@ Your account will be named **My Account** temporarily until you name your accoun
 
 :::
 
-
 ## 2. User Roles
 
 Before you create a team, it is useful to understand the different user roles in Screener. The table below identifies the features that are accessible for each role.
 
-
 <table>
   <tr>
-   <td><strong> </strong>
-   </td>
-   <td><strong><small>Viewer</small></strong>
-   </td>
-   <td><strong><small>Tester</small></strong>
-   </td>
-   <td><strong><small>Administrator</small></strong>
-   </td>
-   <td><strong><small>Account Owner</small></strong>
-   </td>
+   <td><strong> </strong></td>
+   <td><strong><small>Viewer</small></strong></td>
+   <td><strong><small>Tester</small></strong></td>
+   <td><strong><small>Administrator</small></strong></td>
+   <td><strong><small>Account Owner</small></strong></td>
   </tr>
   <tr>
-   <td>View Projects & UI States
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
+   <td>View Projects & UI States</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>Change Status of UI States
-   </td>
-   <td>
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
+   <td>Change Status of UI States</td>
+   <td></td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>Delete Branches
-   </td>
-   <td>
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
+   <td>Delete Branches</td>
+   <td></td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>Add/Delete Projects
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
+   <td>Add/Delete Projects</td>
+   <td></td>
+   <td></td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>Manage Teams
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>x
-   </td>
-   <td>x
-   </td>
+   <td>Manage Teams</td>
+   <td></td>
+   <td></td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>Manage Billing Information
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>x
-   </td>
+   <td>Manage Billing Information</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td>x</td>
   </tr>
 </table>
-
 
 Every Screener user has an individual account and will be the **Account Owner** for their own account. When a user is added to a team in another user's account, they will have access to the project(s) as defined by their role in the team.
 
@@ -133,7 +102,6 @@ Enter a team name, select the appropriate user role, and click **Save**.
 
 <img src={useBaseUrl('img/visual/e2e-add-team.png')} alt="E2E Add Team" />
 
-
 ## 4. Add Users to a Team
 
 After a team is created, you can add users to a team. Click on the team you wish to add a user to, and click on **Assign Users**.
@@ -152,8 +120,6 @@ You will see the user added to the list. For new users, you will see **To Be Inv
 For new users who are invited to join Screener, they will receive an invitation email. They can follow the instructions in the email to complete the registration process. When they are registered, they will have access to your project(s).
 
 :::
-
-
 
 ## 5. Assign Projects to a Team
 

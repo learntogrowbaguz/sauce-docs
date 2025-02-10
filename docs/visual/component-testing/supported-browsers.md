@@ -4,6 +4,13 @@ title: Browsers and Devices Supported for Visual Component Testing
 sidebar_label: Supported Browsers and Devices
 ---
 
+:::warning Screener End-of-life
+
+The Screener visual testing solution is going to be discontinued on May 31st, 2024. You can migrate to the new Sauce Labs Visual Testing solution by following the [integration steps](/visual-testing/).
+
+If you have any questions, please reach out to your Customer Success Manager or Sauce Labs Support.
+:::
+
 For cross-browser testing (i.e., testing across multiple browsers), we provide cloud browsers and device emulators.
 
 ## Supported Browsers
@@ -12,35 +19,26 @@ The following browsers are available in our cloud:
 
 <table>
   <tr>
-   <td><strong>browserName</strong>
-   </td>
-   <td><strong>version</strong>
-   </td>
+   <td><strong>browserName</strong></td>
+   <td><strong>version</strong></td>
   </tr>
   <tr>
-   <td><strong>chrome</strong>
-   </td>
-   <td><em>-Do not set-</em>
-   </td>
+   <td><strong>chrome</strong></td>
+   <td><em>-Do not set-</em></td>
   </tr>
   <tr>
-   <td><strong>firefox</strong>
-   </td>
-   <td><em>-Do not set-</em>
-   </td>
+   <td><strong>firefox</strong></td>
+   <td><em>-Do not set-</em></td>
   </tr>
   <tr>
-   <td><strong>internet explorer</strong>
-   </td>
-   <td>11
-   </td>
+   <td><strong>internet explorer</strong></td>
+   <td>11</td>
   </tr>
 </table>
 
 To test against additional browsers (e.g., Safari and Edge), you can [integrate Screener with Sauce Labs](/visual/component-testing/integrations/sauce-labs) to gain access.
 
 Cross-browser testing is available through Screener's Perform plan. By default, Screener runs tests against the Chrome browser.
-
 
 ## Adding Browsers
 
@@ -96,9 +94,9 @@ if (process.env.CIRCLE_BRANCH === 'main') {
 module.exports = config;
 ```
 
-
 ## More Information
 
 For more information on what we support, see:
-* [Sauce Labs | Supported Browsers and Devices](https://saucelabs.com/platform/supported-browsers-devices)
-* [Sauce Labs Platform Configurator](https://saucelabs.com/platform/platform-configurator#/)
+
+- [Sauce Labs | Supported Browsers and Devices](https://saucelabs.com/platform/supported-browsers-devices)
+- [Sauce Labs Platform Configurator](https://saucelabs.com/platform/platform-configurator#/)

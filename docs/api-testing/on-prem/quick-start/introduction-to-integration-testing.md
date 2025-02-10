@@ -2,14 +2,14 @@
 id: introduction-to-integration-testing
 title: Introduction to Integration Testing
 sidebar_label: Intro to Integration Testing
-description: "Integration testing is a core feature of the API Fortress platform. Watch our video about how to write an Integration Test. Follow along with the demo video in the API Fortress platform here: Quick Integration Demo. Integration testing is critical to creating a strong API testing strategy. Microservices are built to work together."
+description: 'Integration testing is a core feature of the API Fortress platform. Watch our video about how to write an Integration Test. Follow along with the demo video in the API Fortress platform here: Quick Integration Demo. Integration testing is critical to creating a strong API testing strategy. Microservices are built to work together.'
 ---
 
 <head>
   <meta name="robots" content="noindex" />
 </head>
 
->**Legacy Documentation**<br/>You're viewing legacy documentation for API Fortress (deployed via an on-premises container). To view documentation for the new SaaS version of API Fortress &#8212; now known as Sauce Labs API Testing and Monitoring (with Sauce Connect tunnels) &#8212; see [API Testing on the Sauce Labs Cloud](/api-testing/).
+> **Legacy Documentation**<br/>You're viewing legacy documentation for API Fortress (deployed via an on-premises container). To view documentation for the new SaaS version of API Fortress &#8212; now known as Sauce Labs API Testing and Monitoring (with Sauce Connect tunnels) &#8212; see [API Testing on the Sauce Labs Cloud](/api-testing/).
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -41,11 +41,11 @@ We do this so we don’t have to manually invoke or set a variable every time it
 
 <img src={useBaseUrl('img/api-fortress/2018/04/Screen-Shot-2018-04-12-at-12.31.27-PM.png')} alt="Set Variable"/>
 
-Now, call the variable `“access_token”` and assign the value to ${payload.Token}. The response body from the original post call was saved to a variable called “payload.” The key to access the token is named `“Token”`, so you may find it by calling `“payloadToken”`. Be sure to wrap this all in `${}` so that API Fortress knows to interpret what’s between the brackets instead of using it literally.
+Now, call the variable `“access_token”` and assign the value to $\{payload.Token}. The response body from the original post call was saved to a variable called “payload.” The key to access the token is named `“Token”`, so you may find it by calling `“payloadToken”`. Be sure to wrap this all in `${}` so that API Fortress knows to interpret what’s between the brackets instead of using it literally.
 
 ## Making Follow-up Calls
 
-We’re nearly there. We’ve made our authentication `POST` call, and then we’ve saved the token to a dynamic variable named “access\_token.” Now it is time for the third, and for this example, final step.
+We’re nearly there. We’ve made our authentication `POST` call, and then we’ve saved the token to a dynamic variable named “access_token.” Now it is time for the third, and for this example, final step.
 
 This API has a cart function that requires a user token in order to add items to a cart or view items currently in the cart. Use the access token granted by the authentication server to add items to a cart.
 

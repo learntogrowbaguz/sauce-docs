@@ -8,6 +8,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::warning Screener End-of-life
+
+The Screener visual testing solution is going to be discontinued on May 31st, 2024. You can migrate to the new Sauce Labs Visual Testing solution by following the [integration steps](/visual-testing/).
+
+If you have any questions, please reach out to your Customer Success Manager or Sauce Labs Support.
+:::
 
 ## Test Timeouts
 
@@ -20,12 +26,12 @@ Test framework timeouts can be resolved by increasing the timeout option specifi
 Here are some examples for WebDriverIO, which supports various testing frameworks:
 
 <Tabs
-  defaultValue="Mocha"
-  values={[
-    {label: 'Mocha', value: 'Mocha'},
-    {label: 'Jasmine', value: 'Jasmine'},
-    {label: 'Cucumber', value: 'Cucumber'},
-  ]}>
+defaultValue="Mocha"
+values={[
+{label: 'Mocha', value: 'Mocha'},
+{label: 'Jasmine', value: 'Jasmine'},
+{label: 'Cucumber', value: 'Cucumber'},
+]}>
 
 <TabItem value="Mocha">
 
@@ -77,7 +83,6 @@ exports.config = {
 </TabItem>
 </Tabs>
 
-
 ### WebDriver Timeouts
 
 WebDriver timeouts can be increased via the `timeouts` capability.
@@ -95,7 +100,6 @@ capabilities = {
 ```
 
 Additional information on WebDriver timeouts can be found [here](https://developer.mozilla.org/en-US/docs/Web/WebDriver/Errors/ScriptTimeout).
-
 
 ## Can't Capture Snapshot with `cropTo`
 

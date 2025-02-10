@@ -1,6 +1,6 @@
 ---
 id: performance
-title: Performance API Methods
+title: Performance API Endpoints
 sidebar_label: Performance
 description: View and  manage front-end performance test data.
 ---
@@ -12,10 +12,10 @@ The Performance API methods allow you to manage your front-end performance testi
 
 Refer to [Getting Started](/dev/api) for Authentication and Server information.
 
-
 ### Get Performance Test Results
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/</code></summary>
 <p/>
 
 Retrieves the results of performance tests run by the requesting account and returns the metric values for those tests.
@@ -128,13 +128,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     }
 }
 ```
+
 </details>
 
 ---
 
 ### Get Performance Results for a Specific Test
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/</code></summary>
 <p/>
 
 Retrieves the results of a specific performance test run by the requesting account.
@@ -267,13 +269,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     ]
 }
 ```
+
 </details>
 
 ---
 
 ### Get Test Assertions
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/assert/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/assert/</code></summary>
 <p/>
 
 Returns information about any outliers values in the test for the specified metrics.
@@ -365,13 +369,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     }
 }
 ```
+
 </details>
 
 ---
 
 ### Get Test Baseline
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/</code></summary>
 <p/>
 
 Returns acceptable upper and lower border values for specified metrics as determined by the baseline used for the test.
@@ -484,13 +490,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     }
 }
 ```
+
 </details>
 
 ---
 
 ### Get Test Baseline Reset History
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/reset/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/reset/</code></summary>
 <p/>
 
 Indicates whether the baseline has been reset for the specified job (`true`) or not (`false`).
@@ -552,13 +560,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     "result": false
 }
 ```
+
 </details>
 
 ---
 
 ### Set a New Baseline Point
 
-<details><summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/reset/</code></summary>
+<details>
+<summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/baseline/reset/</code></summary>
 <p/>
 
 Resets the point from which the baseline for the specified job is calculated. Any tests prior to the reset point are ignored.
@@ -625,7 +635,8 @@ A successful response returns no payload.
 
 ### Get Discarded Test History
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/discarded/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/discarded/</code></summary>
 <p/>
 
 Returns a list of tests that have been discarded from the baseline calculation as outliers.
@@ -699,13 +710,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
   "job_ids": []
 }
 ```
+
 </details>
 
 ---
 
 ### Discard Outliers as Flaky
 
-<details><summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/discarded/</code></summary>
+<details>
+<summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/discarded/</code></summary>
 <p/>
 
 Discards outlier results for a job to exclude them from future baseline calculations.
@@ -784,7 +797,8 @@ A successful response returns no payload.
 
 ### Get Test History
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/history/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/history/</code></summary>
 <p/>
 
 Returns the test history of the specified job.
@@ -947,7 +961,8 @@ curl --location --request POST 'https://api.eu-central-1.saucelabs.com/v2/perfor
 
 ### Get Metric Regimes
 
-<details><summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/regimes/</code></summary>
+<details>
+<summary><span className="api get">GET</span> <code>/v2/performance/metrics/&#123;job_id&#125;/regimes/</code></summary>
 <p/>
 
 Returns the starting and ending job counts in the current regime (a set of consecutive tests where the results are unchanged) for each specified metric.
@@ -1056,13 +1071,15 @@ curl --location --request GET 'https://api.eu-central-1.saucelabs.com/v2/perform
     ]
 }
 ```
+
 </details>
 
 ---
 
 ### Acknowlege New Regimes
 
-<details><summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/regimes/acknowledge/</code></summary>
+<details>
+<summary><span className="api post">POST</span> <code>/v2/performance/metrics/&#123;job_id&#125;/regimes/acknowledge/</code></summary>
 <p/>
 
 Confirm values in a new regime (point at which a consecutive number of jobs with an unchanged result posts a different result) are acceptable.

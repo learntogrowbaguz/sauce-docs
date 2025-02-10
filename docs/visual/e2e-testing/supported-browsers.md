@@ -4,7 +4,14 @@ title: Visual E2E Supported Browsers and Operating Systems
 sidebar_label: Supported Browsers and OSs
 ---
 
-## Browser Versions Supported
+:::warning Screener End-of-life
+
+The Screener visual testing solution is going to be discontinued on May 31st, 2024. You can migrate to the new Sauce Labs Visual Testing solution by following the [integration steps](/visual-testing/).
+
+If you have any questions, please reach out to your Customer Success Manager or Sauce Labs Support.
+:::
+
+### Browser Versions Supported
 
 <table>
   <tr>
@@ -57,9 +64,7 @@ sidebar_label: Supported Browsers and OSs
   </tr>
 </table>
 
-
-
-## OS Versions Supported
+### OS Versions Supported
 
 <table>
   <tr>
@@ -82,6 +87,21 @@ sidebar_label: Supported Browsers and OSs
     Windows 10
    </td>
    <td>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Windows 11
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    macOS 13
+   </td>
+   <td>
+    Ventura
    </td>
   </tr>
   <tr>
@@ -126,8 +146,9 @@ sidebar_label: Supported Browsers and OSs
   </tr>
 </table>
 
-## More Information
+### More Information
 
 For more information on what we support, see:
-* [Sauce Labs | Supported Browsers and Devices](https://saucelabs.com/platform/supported-browsers-devices)
-* [Sauce Labs Platform Configurator](https://saucelabs.com/platform/platform-configurator#/)
+
+- [Sauce Labs | Supported Browsers and Devices](https://saucelabs.com/platform/supported-browsers-devices)
+- [Sauce Labs Platform Configurator](https://saucelabs.com/platform/platform-configurator#/)
